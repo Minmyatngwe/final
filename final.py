@@ -3,11 +3,11 @@ import requests
 import pandas 
 import numpy as np
 import streamlit as st
-with open(r'C:\Users\minmy\md_data_final','rb') as f:
+with open(r'md_data_final.pickle','rb') as f:
     md_data= pickle.load(f)
 
 
-with open(r"C:\Users\minmy\cos_final", 'rb') as b:
+with open(r"cos_final.pickle", 'rb') as b:
     cos = pickle.load(b)
 
 md_data[['id_1','id_2','id_3']]=md_data[['id_1','id_2','id_3']].astype(int)
