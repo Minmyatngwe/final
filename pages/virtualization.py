@@ -44,12 +44,13 @@ if st.button('Show Plot'):
             fig.update_yaxes(title_text='Number of Movies')
             fig.update_layout(width=900,height=600)
             st.plotly_chart(fig,use_container_width=False)
+st.subheader('Average rating of genres')
+
 selected_country = st.selectbox("Select the country", data.Country.unique())
 md_selected_country = data.loc[data['Country'] == selected_country]
 selected_country_df = pd.DataFrame(md_selected_country.groupby('Genre')['imdbRating'].mean())
 selected_country_df.reset_index(inplace=True)
 selected_rows = selected_country_df.iloc[[0, 1,2, -1, -2,-3]]
-st.subheader('Average rating of genres')
 
 
 if st.button('Show Genre-wise Ratings'):
