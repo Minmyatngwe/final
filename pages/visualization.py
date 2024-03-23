@@ -7,7 +7,7 @@ from datetime import datetime, time
 import plotly.express as px
 import plotly.graph_objects as go
 
-with open("movie_data_plotting",'rb')as f:
+with open(r"movie_data_plotting",'rb')as f:
 
       data= pickle.load(f)
 
