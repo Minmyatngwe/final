@@ -17,10 +17,12 @@ start_date=pd.to_datetime(data.Released).min()
 
 end_date=pd.to_datetime(data.Released).max()
 st.subheader('Movie production by countries')
+
 date1, date2 = st.columns((2))
+
 plot1, plot2 = st.columns((2))
 plot_column, pie_plot_column = st.columns((2))
-
+st.subheader('Average rating of genres')
 
 with date1:
       selected_date1=st.date_input('Starting Date',start_date)
