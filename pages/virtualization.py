@@ -22,7 +22,6 @@ date1, date2 = st.columns((2))
 
 plot1, plot2 = st.columns((2))
 plot_column, pie_plot_column = st.columns((2))
-st.subheader('Average rating of genres')
 
 with date1:
       selected_date1=st.date_input('Starting Date',start_date)
@@ -50,6 +49,7 @@ md_selected_country = data.loc[data['Country'] == selected_country]
 selected_country_df = pd.DataFrame(md_selected_country.groupby('Genre')['imdbRating'].mean())
 selected_country_df.reset_index(inplace=True)
 selected_rows = selected_country_df.iloc[[0, 1,2, -1, -2,-3]]
+st.subheader('Average rating of genres')
 
 
 if st.button('Show Genre-wise Ratings'):
