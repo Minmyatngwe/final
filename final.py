@@ -76,8 +76,8 @@ if st.button("Show recommendation"):
         st.text(selected_movies[0])
         st.write(f"""
         <div style="display: flex;">
-        <div>
-            <img src={selected_image[0]} alt="Image" width="600"/>
+        <div width="70%">
+            <img src={selected_image[0]} alt="Image" width="100%"/>
         </div>
         <div style="padding-left: 50px;">
             <h1>OverView</h1>
