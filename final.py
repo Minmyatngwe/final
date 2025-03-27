@@ -80,7 +80,7 @@ if st.button("Show recommendation"):
                     <div style="width: 70%; flex-shrink: 0;">
                         <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
                     </div>
-                    <div style="padding-left: 50px; width: 20%;">
+                    <div style="padding-left: 50px; width: 30%;">
                         <h1>OverView</h1>
                         <p>Release Date-{overview[0][2]}</p>
                         <p>Run Time: {overview[0][1]} min</p>
