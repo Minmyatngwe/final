@@ -71,15 +71,16 @@ if st.button("Show recommendation"):
     movie6,movie7,movie8,movie9,movie10=st.columns(5)
     actor_header1,actor_header2=st.columns(2)
     actor1,actor2,actor3=st.columns(3)
+
     with movie0:
         overview=np.array([get_overview(selected_movies[0])])
         st.text(selected_movies[0])
         st.write(f"""
         <div style="display: flex;">
         <div width="500px">
-            <img src={selected_image[0]} alt="Image" width="100%"/>
+            <img src={selected_image[0]} alt="Image" width="100%";/>
         </div>
-        <div style="padding-left: 50px width=200px">
+        <div style="padding-left: 50px; width=200px">
             <h1>OverView</h1>
             <p1>Release Date-{overview[0][2]}</p1>
         </div>
