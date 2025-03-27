@@ -5,6 +5,7 @@ import numpy as np
 import streamlit as st
 with open(r'./md_data_final.pickle','rb') as f:
     md_data= pickle.load(f)
+api_key = st.secrets["API_KEY"]
 
 
 with open(r"cos_final.pickle", 'rb') as b:
@@ -12,14 +13,14 @@ with open(r"cos_final.pickle", 'rb') as b:
 
 md_data[['id_1','id_2','id_3']]=md_data[['id_1','id_2','id_3']].astype(int)
 def get_image(x):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(x)
+    url = f"https://api.themoviedb.org/3/movie/{x}?api_key={api_key}&language=en-US"
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
     full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
     return full_path
 def get_person(x):
-    url = "https://api.themoviedb.org/3/person/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(x)
+    url = f"https://api.themoviedb.org/3/person/{x}?api_key={api_key}&language=en-US"
     data = requests.get(url)
     data = data.json()
     poster_path = data['profile_path']
@@ -49,7 +50,7 @@ def get_overview(movie_name):
     index=md_data.loc[md_data.title==movie_name,'movie_id'].index[0]
     id=md_data.loc[index,'movie_id']
     
-    test=requests.get(f'https://api.themoviedb.org/3/movie/{id}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US').json()
+    test=requests.get(f'https://api.themoviedb.org/3/movie/{id}?api_key={api_key}&language=en-US').json()
     
     release_date=test['release_date']
     runtime=test['runtime']
