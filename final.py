@@ -3,7 +3,7 @@ import requests
 import pandas 
 import numpy as np
 import streamlit as st
-with open(r'md_data_final.pickle','rb') as f:
+with open(r'./md_data_final.pickle','rb') as f:
     md_data= pickle.load(f)
 
 
