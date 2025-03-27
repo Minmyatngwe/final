@@ -77,7 +77,7 @@ if st.button("Show recommendation"):
         st.write(f"""
         <div style="display: flex;">
         <div style="flex: 1;">
-            <img src={selected_image[0]} alt="Image" width="600"/>
+            <img src={selected_image[0]} alt="Image" width="600" height="500"/>
         </div>
         <div style="padding-left: 50px;">
             <h1>OverView</h1>
