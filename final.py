@@ -77,10 +77,10 @@ if st.button("Show recommendation"):
         st.text(selected_movies[0])
         st.write(f"""
                 <div style="display: flex; width: 100%;">
-                    <div style="width: 500px; flex-shrink: 0;">
+                    <div style="width: 80%; flex-shrink: 0;">
                         <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
                     </div>
-                    <div style="padding-left: 50px; width: 200px;">
+                    <div style="padding-left: 50px; width: 20%;">
                         <h1>OverView</h1>
                         <p>Release Date-{overview[0][2]}</p>
                         <p>Run Time: {overview[0][1]} min</p>
