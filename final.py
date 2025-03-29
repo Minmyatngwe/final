@@ -78,7 +78,7 @@ if st.button("Show recommendation"):
         st.text(selected_movies[0])
         st.write(f"""
             <style>
-                .stColumn.st-emotion-cache {{
+                .stColumn {{
                     display: block !important;
                 }}
                
