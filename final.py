@@ -65,7 +65,7 @@ if st.button("Show recommendation"):
     selected_movies,selected_image = recommending_system(select)
     to_show_actor=md_data.loc[md_data.title==selected_movies[0],['name_1','id_1','name_2','id_2','name_3','id_3']]
     array=np.array(to_show_actor)
-    movie0=st.columns(1)[0]
+    movie0=st.columns(1)
     recommend1,recommend2=st.columns(2)
 
     movie1, movie2, movie3, movie4, movie5 = st.columns(5)
