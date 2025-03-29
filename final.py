@@ -79,9 +79,9 @@ if st.button("Show recommendation"):
     st.write(f"""
         <style>
 
-            .stColumn.st-emotion-cache {
+            .stColumn.st-emotion-cache {{
                 display: block !important;
-            }
+            }}
         </style>
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
             <div style="flex: 1 1 60%; max-width: 60%;">
