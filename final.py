@@ -77,7 +77,7 @@ if st.button("Show recommendation"):
         overview=np.array([get_overview(selected_movies[0])])
         st.text(selected_movies[0])
         st.write(f"""
-            <div style="display: flex; align-items: flex-start;">
+            <div style="display: flex; align-items: flex-start; width:43vw;">
                 <div style="width: 65%; flex-grow: 1;">
                     <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
                 </div>
