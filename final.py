@@ -77,11 +77,11 @@ if st.button("Show recommendation"):
         overview=np.array([get_overview(selected_movies[0])])
         st.text(selected_movies[0])
         st.write(f"""
-                <div style="display: flex; width: 43vw;">
-                    <div style="width: 68%; flex-shrink: 0;">
+                <div style="display: flex;">
+                    <div style="width: 70%; flex-grow: 1;">
                         <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
                     </div>
-                    <div style="padding-left: 40px; width: 32%;">
+                    <div style="padding-left: 2vw; width: 29%;">
                         <h1>OverView</h1>
                         <p>Release Date-{overview[0][2]}</p>
                         <p>Run Time: {overview[0][1]} min</p>
