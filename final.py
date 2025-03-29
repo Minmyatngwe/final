@@ -77,7 +77,6 @@ if st.button("Show recommendation"):
         overview=np.array([get_overview(selected_movies[0])])
         st.text(selected_movies[0])
     st.write(f"""
-
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
             <div style="flex: 1 1 60%; max-width: 60%;">
                 <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
@@ -85,9 +84,6 @@ if st.button("Show recommendation"):
             <div style="flex: 1 1 35%; max-width: 35%; padding-left: 2vw;">
                 <h1 style="white-space: nowrap; font-size: 2em; margin-bottom: 10px;">Overview</h1>
                 <p>Release Date: {overview[0][2]}</p>
-                <p>Run Time: {overview[0][1]} min</p>
-                <p>Production Country: {overview[0][3]}</p>
-                <p>Rating: {overview[0][4]}</p>
             </div>
         </div>
     """, unsafe_allow_html=True)
