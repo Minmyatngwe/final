@@ -77,6 +77,13 @@ if st.button("Show recommendation"):
         overview=np.array([get_overview(selected_movies[0])])
         st.text(selected_movies[0])
         st.write(f"""
+            <style>
+                .stColumn.st-emotion-cache {{
+                    display: block !important;
+                }}
+               
+            </style>
+
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="flex: 1 1 60%; max-width: 60%;">
                     <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
