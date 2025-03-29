@@ -80,7 +80,7 @@ if st.button("Show recommendation"):
         <style>
 
             .stColumn.st-emotion-cache {{
-                display: block !important;
+                display: none;
             }}
         </style>
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
