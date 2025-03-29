@@ -79,7 +79,7 @@ if st.button("Show recommendation"):
         st.write(f"""
             <style>
                 .stColumn.st-emotion-cache-t74pzu.eu6p4el2 {{
-                    display: none;
+                    display: block !improtant;
                 }}
                
             </style>
