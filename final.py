@@ -77,19 +77,19 @@ if st.button("Show recommendation"):
         overview=np.array([get_overview(selected_movies[0])])
         st.text(selected_movies[0])
         st.write(f"""
-                <div style="display: flex;">
-                    <div style="width: 70%; flex-grow: 1;">
-                        <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
-                    </div>
-                    <div style="padding-left: 2vw; width: 29%;">
-                        <h1>OverView</h1>
-                        <p>Release Date-{overview[0][2]}</p>
-                        <p>Run Time: {overview[0][1]} min</p>
-                        <p>Production Country: {overview[0][3]}</p>
-                        <p>Rating: {overview[0][4]}</p>
-                    </div>
+            <div style="display: flex; align-items: flex-start;">
+                <div style="width: 65%; flex-grow: 1;">
+                    <img src={selected_image[0]} alt="Image" style="width: 100%; height: auto;"/>
                 </div>
-                """, unsafe_allow_html=True)
+                <div style="padding-left: 2vw; width: 35%;">
+                    <h1 style="white-space: nowrap; font-size: 2em; margin-bottom: 10px;">Overview</h1>
+                    <p>Release Date: {overview[0][2]}</p>
+                    <p>Run Time: {overview[0][1]} min</p>
+                    <p>Production Country: {overview[0][3]}</p>
+                    <p>Rating: {overview[0][4]}</p>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
 
         st.text('Released Date-' + overview[0][0])
         st.text('Run Time ' + overview[0][1]+ 'min ')
