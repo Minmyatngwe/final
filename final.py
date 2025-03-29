@@ -103,10 +103,10 @@ if st.button("Show recommendation"):
         </div>
     """, unsafe_allow_html=True)
 
-        st.text('Released Date-' + overview[0][0])
-        st.text('Run Time ' + overview[0][1]+ 'min ')
-        st.text(' Production Country ' + overview[0][3])
-        st.text(' Rating ' + overview[0][4])
+    st.text('Released Date-' + overview[0][0])
+    st.text('Run Time ' + overview[0][1]+ 'min ')
+    st.text(' Production Country ' + overview[0][3])
+    st.text(' Rating ' + overview[0][4])
       
     with recommend1:
         st.subheader('Recommending movies')
