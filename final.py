@@ -78,16 +78,10 @@ if st.button("Show recommendation"):
         st.text(selected_movies[0])
     st.write(f"""
         <style>
-            .extra-div {{
-                display: none !important; 
-            }}
-            .stColumn.st-emotion-cache {{
+
+            .stColumn.st-emotion-cache {
                 display: block !important;
-            }}
-            .stColumn.st-emotion-cache > div {{
-                display: flex !important;
-                justify-content: space-between;
-            }}
+            }
         </style>
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
             <div style="flex: 1 1 60%; max-width: 60%;">
